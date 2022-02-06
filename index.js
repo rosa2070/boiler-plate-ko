@@ -5,20 +5,20 @@ const port = 5000
 
 const { User } = require("./models/User");
 
-//application/x-www-form-urlendocded
+//application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: true}));
 
 //application/json
 app.use(bodyParser.json());
 
-/*const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 mongoose.connect('mongodb+srv://jaeeun:1224@personalcolor.8z9g3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
-    useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
+//  useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
 }).then(() => console.log('MongoDB Connected...'))
-  .catch(err => console.log(err))*/
+  .catch(err => console.log(err))
 
 app.get('/', (req, res) => {
-  res.send('Hello World!~~안녕하세요')
+  res.send('Hello World!~~')
 })
 
 app.post('/register', (req, res) => {
