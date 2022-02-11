@@ -1,6 +1,7 @@
 import axios, { Axios } from 'axios';
 import {
-    LOGIN_USER
+    LOGIN_USER,
+    REGISTER_USER
 } from './types';
 export function loginUser(dataToSubmit) {
 
