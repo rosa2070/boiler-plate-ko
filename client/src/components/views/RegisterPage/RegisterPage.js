@@ -44,14 +44,8 @@ function RegisterPage(props) {
 
         dispatch(registerUser(body))
             .then(response => {
-                if (response.payload.loginSuccess) {
-                    props.history.push('/')
-                } else {
-                    alert('Error')
-                }
+
             })
-
-
     }
 
     return (
