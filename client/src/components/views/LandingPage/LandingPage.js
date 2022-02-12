@@ -8,6 +8,13 @@ function LandingPage() {
             .then(response => console.log(response.data))
     }, [])
 
+    const onClickHandler = () => {
+        axios.get(`/api/users/logout`)
+            .then(response => {
+                console.log(response.data)
+            })
+    }
+
     return (
         <div style={{
             display: 'flex', justifyContent: 'center', alignItems: 'center'
@@ -15,7 +22,7 @@ function LandingPage() {
         }}>
             <h2>시작 페이지</h2>
 
-            <button>
+            <button onClick={onClickHandler}>
                 로그아웃
             </button>
         </div>
