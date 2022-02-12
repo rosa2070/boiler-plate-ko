@@ -62,7 +62,7 @@ function RegisterPage(props) {
                 <label>Email</label>
                 <input type="email" value={Email} onChange={onEmailHandler} />
 
-                <lable>Name</lable>
+                <label>Name</label>
                 <input type="text" value={Name} onChange={onNameHandler} />
 
                 <label>Password</label>
