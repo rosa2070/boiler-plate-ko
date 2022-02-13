@@ -11,6 +11,7 @@ export default function (SpecificComponent, option, adminRoute = null) {
 
     function AuthenticationCheck(props) {
         const dispatch = useDispatch();
+
         useEffect(() => {
 
             dispatch(auth()).then(response => {
@@ -37,8 +38,5 @@ export default function (SpecificComponent, option, adminRoute = null) {
             <SpecificComponent />
         )
     }
-
-
-
     return AuthenticationCheck
 }

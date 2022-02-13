@@ -14,9 +14,6 @@ function App() {
   return (
     <Router>
       <div>
-
-
-
         {/*
           A <Switch> looks through all its children <Route>
           elements and renders the first one whose path
